@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form-container">
+        <h2>Preencha os dados da parte 1</h2>
+        <form action="./obrigado.html" id="main-form">
+            <div id="parte1">
+                <label for="valorEnergia">Qual o valor mensal da sua conta de energia?</label>
+                <input type="text" id="valorEnergia" name="valorEnergia">
+                <br>
+                <label for="cnpj">CNPJ</label>
+                <input type="text" id="cnpj" name="cnpj">
+            </div>
+
+            <div id="parte2" style="display: none;">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone">
+            </div>
+        </form>
+        <button id="voltarButton" style="display: none;">Voltar</button>
+        <button id="nextButton">Próximo</button>
+        <button id="enviarButton" type="submit" style="display: none;">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+
+<script type="text/javascript">
+
+    var __ss_noform = __ss_noform || [];
+
+    __ss_noform.push(['baseURI', 'https://app-3R03ISYOB8.marketingautomation.services/webforms/receivePostback/MzawNDI3NTOxAAA/']);
+
+    __ss_noform.push(['endpoint', '2c825f12-b162-4ecb-82be-e5b3fea122c1']);
+
+</script>
+
+<script type="text/javascript" src="https://koi-3R03ISYOB8.marketingautomation.services/client/noform.js?ver=1.24" ></script>
+
+    
+</body>
+</html>
