@@ -1,55 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
+
+
 <body>
-    <div id="form-container">
-        <h2>Preencha os dados da parte 1</h2>
-        <form action="./obrigado.html" id="main-form">
-            <div id="parte1">
-                <label for="valorEnergia">Qual o valor mensal da sua conta de energia?</label>
-                <input type="text" id="valorEnergia" name="valorEnergia">
-                <br>
-                <label for="cnpj">CNPJ</label>
-                <input type="text" id="cnpj" name="cnpj">
-            </div>
-    
-            <div id="parte2" style="display: none;">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <br>
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" name="telefone">
-            </div>
-            <button id="voltarButton" style="display: none;">Voltar</button>
-            <button id="nextButton">Próximo</button>
-            <button id="enviarButton" type="submit" style="display: none;">Enviar</button>
 
+    <header>
+        <a href="#inicio"><img src="./assets/logo.svg" alt="logo"></a>
+    </header>
+
+    <section id="inicio">
+        <div class="left-section-home">
+            <div class="text-home">
+                <img class="main-image" src="./assets/main_image.svg" alt="main-image">
+                <div class="text-container-home">
+                    <div class="container-prg1">
+                        <p>exclusivo para empresas</p>
+                    </div>
+                    <h1>Redução de até 40% <br> na conta de luz.</h1>
+                    <div class="container-prg2">
+                        <p>Zero investimento</p>
+                    </div>
+                </div>
+            </div>
+            <button class="open-modal-button home-btn" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+        </div>
+        
+
+        <div class="right-section-home">
             
-<script type="text/javascript">
+            <div class="container-data-home">
+                <div class="dois-mil"><span>+ 2 mil</span><p> unidades consumidoras</p></div>
+                <div class="quinhentos"><span>+ 500</span><br><p>cidades</p></div>
+                <div class="dois-bi"><span>+ 2 bi</span><br><p>sob gestão</p></div>
+                <div class="nps"><span>NPS 96</span></div>
+            </div>
 
-    var __ss_noform = __ss_noform || [];
+            <button class="open-modal-button mobile-btn" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+            <img class="office-img" src="./assets/office.svg" alt="escritorio-witzler">
 
-    __ss_noform.push(['baseURI', 'https://app-3R03ISYOB8.marketingautomation.services/webforms/receivePostback/MzawNDI3NTOxAAA/']);
+        </div>
+    </section>
 
-    __ss_noform.push(['endpoint', '2c825f12-b162-4ecb-82be-e5b3fea122c1']);
+    <article>
+        <div class="left-container-article">
+            <h1><span> Sua empresa gasta</span> acima <br> de <span>5 mil</span>  em energia elétrica? <span class="span-mobile">Então o Mercado Livre de Energia <br> foi feito para você!</span> </h1>
+            
+            <div class="container-article-prg">
+                <p>Então o Mercado Livre de Energia foi feito para você!</p>
+            </div>
+            <ul class="lista-second">
+                <span>Os benefícios são muitos:</span>
+                <li>Economia de até 40% em energia.</li>
+                <li>Custos mensais fixos nas faturas de eletricidade.</li>
+                <li>Fim das bandeiras tarifárias.</li>
+                <li>Sustentabilidade: energia 100% limpa e renovável!</li>
 
-</script>
+            </ul>
 
-<script type="text/javascript" src="https://koi-3R03ISYOB8.marketingautomation.services/client/noform.js?ver=1.24" ></script>
-        </form>
+            <button class="open-modal-button btn-list" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+        </div>
+
+        <img class="energy-image" src="./assets/energy_image.svg" alt="imagem-energia">
+
+    </article>
+
+    <section class="section-drop section-faq">
+        <h1>Perguntas frequentes</h1>
+
+        <div class="container-questions">
+            <div class="dropdown faq">
+
+                <div class="title-drop">
+                    <h4>O que é e como funciona o Mercado Livre de Energia?</h4>
+                    <img width="30px" height="30px" src="./assets/blue-arrow.svg" alt="arrow" class="arrow">
+                </div>
+                <div class="container-dropdown container-faq">
+                    <p>O Mercado Livre de Energia é o ambiente de contratação no qual os consumidores podem escolher
+                        livremente seu fornecedor de energia elétrica. <br>
+
+                        <br>
+                        Atualmente, mais de 35% da energia consumida no país vem desse mercado, o que inclui mais de 30
+                        mil unidades consumidoras.<br>
+                        <br>
+
+                        Dessa maneira, a partir de janeiro de 2024, todos os consumidores conectados à rede de Alta
+                        Tensão (Grupo A), estarão aptos a realizar a portabilidade da conta de luz.
+                        <br>
+                        <br>
+
+                        Vantagens do Mercado Livre de Energia:
+                        <br>
+                        <br>
+                    <ul>
+                        <li> Economia de até 40% na conta de luz;</li>
+                        <li>Acesso à energia limpa e renovável;</li>
+                        <li> Fim das bandeiras tarifárias e do horário de ponta;</li>
+                        <li>Zero investimento.</li>
+                    </ul>
+                    </p>
+                    <button class="faq-btn" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+                </div>
+            </div>
+
+            <div class="dropdown faq">
+
+                <div class="title-drop">
+                    <h4>Vou ter que pagar duas contas separadas? Como isso funciona?</h4>
+                    <img width="30px" height="30px" src="./assets/blue-arrow.svg" alt="arrow" class="arrow">
+                </div>
+                <div class="container-dropdown container-faq container4">
+                    <p>Durante a etapa de portabilidade, sua empresa continuará recebendo normalmente a fatura de
+                        energia da distribuidora. Após a conclusão desse processo, você passará a receber duas faturas
+                        mensais:<br>
+
+                        <br>
+                        Atualmente, mais de 35% da energia consumida no país vem desse mercado, o que inclui mais de 30
+                        mil unidades consumidoras.<br>
+                        <br>
+
+                        Dessa maneira, a partir de janeiro de 2024, todos os consumidores conectados à rede de Alta
+                        Tensão (Grupo A), estarão aptos a realizar a portabilidade da conta de luz.
+                        <br>
+                        <br>
+
+                        Vantagens do Mercado Livre de Energia:
+                        <br>
+                        <br>
+
+                    
+                    <ul>
+                        <li>Fatura da Distribuidora: Esta fatura incluirá os valores referentes ao uso da rede
+                            elétrica.</li>
+                        <li>Fatura de Energia do Grupo Witzler: Nessa fatura, será cobrado o valor correspondente ao
+                            seu consumo de energia renovável.</li>
+
+                    </ul>
+                    <br>
+                    Embora haja duas faturas, é importante lembrar que a soma dos valores será sempre menor do que o
+                    pago atualmente à distribuidora, o que garante uma redução significativa nos seus custos com
+                    energia.
+                    </p>
+
+                    <button style="margin-top: -150px;" class="faq-btn" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+                </div>
+            </div>
+
+            <div class="dropdown faq">
+
+                <div class="title-drop">
+                    <h4>Como ficam as Bandeiras Tarifárias (Verde, Amarela e Vermelha) <br> na minha conta de luz no Mercado
+                        Livre de Energia?</h4>
+                    <img width="30px" height="30px" src="./assets/blue-arrow.svg" alt="arrow" class="arrow">
+                </div>
+                <div class="container-dropdown container-faq">
+                    <p>No Mercado Livre de Energia, não há cobrança de Bandeiras Tarifárias.<br>
+
+                        <br>
+
+                    </p>
+
+                    <button class="faq-btn" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+                </div>
+            </div>
+
+
+            <div class="dropdown faq">
+
+                <div class="title-drop">
+                    <h4>Quem pode fazer parte do Mercado Livre de Energia?</h4>
+                    <img width="30px" height="30px" src="./assets/blue-arrow.svg" alt="arrow" class="arrow">
+                </div>
+                <div class="container-dropdown container-faq">
+                    <p>Quando começo a notar minha economia no Mercado Livre de Energia? Quando começo a pagar pela
+                        minha energia renovável? <br>
+
+                        <br>
+                        A portabilidade tem uma duração estimada de 6 meses.<br>
+                        <br>
+
+                        Mas não se preocupe! Assim que o contrato é firmado, inicia-se um acompanhamento mensal das suas
+                        faturas de energia, identificando oportunidades de redução de custos e implementação de medidas
+                        para otimizar os gastos.
+                        <br>
+                        <br>
+
+                        Dessa forma, a partir da migração efetiva para o Mercado Livre de Energia, sua empresa já estará
+                        preparada para aproveitar todos os benefícios. Fique tranquilo, nossa equipe cuida de tudo para
+                        você!
+                        <br>
+
+                    </p>
+
+                    <button class=" faq-btn" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+                </div>
+            </div>
+
+            <div class="dropdown faq">
+
+                <div class="title-drop">
+                    <h4>Preciso fazer alguma obra ou instalação?</h4>
+                    <img width="30px" height="30px" src="./assets/blue-arrow.svg" alt="arrow" class="arrow">
+                </div>
+                <div class="container-dropdown container-faq">
+                    <p>Não. Todos os Consumidores conectados em Alta Tensão já possuem sua viabilidade física garantida
+                        para o ano de 2024. O único requisito é a atualização do seu Sistema de Medição, que pode ou não
+                        ser necessária.
+                    </p>
+                    <button class=" faq-btn" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+
+                </div>
+            </div>
+
+            <div class="dropdown faq">
+
+                <div class="title-drop">
+                    <h4>Como minha conta de energia vai ficar mais barata?</h4>
+                    <img width="30px" height="30px" src="./assets/blue-arrow.svg" alt="arrow" class="arrow">
+                </div>
+                <div class="container-dropdown container-faq">
+                    <p>Com o Economia Exponencial, sua empresa acessa energia limpa, barata e segura, sem se preocupar
+                        com reajustes ou bandeiras tarifárias. Além disso, você paga energia elétrica a preço fixo,
+                        independentemente do horário de consumo.
+                    </p>
+
+                    <button  class=" faq-btn" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-selos">
+        <div class="intern-container-selos">
+            <div class="container-text-selos">
+                <h1>Grupo Witzler</h1>
+                <p>Líder em migrações para o mercado livre de energia.</p>
+            </div>
+
+            <div class="container-selos">
+                <img src="./assets/selos1.svg" alt="selos">
+                <img src="./assets/selos2.svg" alt="selos">
+            </div>
+
+            <img class="certificados-img" src="./assets/certificados.svg" alt="certificados">
+            <button class="open-modal-button" data-modal="myModal">SIMULE AGORA SUA ECONOMIA</button>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <a href="#inicio"> <img width="200px" src="./assets/footer-logo.svg" alt="logo"></a>
+
+        <div>
+            <p>2023 COPYRIGHT - TODOS OS DIREITOS RESERVADOS</p>
+        </div>
+    </footer>
+
+    <div>
+        <div class="body-overlay" id="bodyOverlay"></div>
+
+        <div class="modal" id="myModal">
+
+            <div class="top-container-modal">
+
+                <img class="close-img" src="./assets/close.svg" alt="">
+
+                <div class="wrap-container-steps">
+                    <div class="first-container">
+                        <div class="data-div">
+                            <p>Dados para simulação</p>
+                        </div>
+                        <div class="step-div">
+                            <p class="step ">Passo 01</p>
+                        </div>
+                    </div>
+
+                    <div class="line middle-line dive"></div>
+
+                    <div class="second-container">
+                        <div class="data-div receive-div">
+                            <p class="prg-receive">Receber simulação</p>
+                        </div>
+                        <div class="step-div ">
+                            <p style="color: #94887F;" class="step2 prg-receive">Passo 02</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line dive">
+                    <img class="arrow-img" src="./assets/arrow.svg" alt="">
+
+                </div>
+            </div>
+
+       
+            <div id="form-container">
+
+                <form action="./obrigado.html" method="post"   id="main-form">
+                    <div id="parte1">
+                        <div class="container-inputs">
+                            <label for="valorEnergia">Qual o valor mensal da sua conta de energia? *</label>
+                            <input type="text" id="valorEnergia" name="valorEnergia" required>
+                        </div>
+                        <br>
+                        <div class="container-inputs">
+                            <label for="cnpj">CNPJ *</label>
+                            <input type="text" id="cnpj" name="cnpj" required>
+                        </div>
+                    </div>
+
+                    <div id="parte2" style="display: none;">
+                        <div class="container-inputs">
+                            <label for="nome">Nome *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <br>
+                        <div class="container-inputs">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <br>
+                        <div class="container-inputs">
+                            <label for="telefone">Telefone *</label>
+                            <input type="text" id="telefone" name="telefone" required>
+                        </div>
+                    </div>
+                    <div class="container-btn">
+
+                        <div class="container-second-step-btn">
+                            <button onclick="reverterCor()" id="voltarButton" class="form-btn"
+                                style="display: none;"><img src="./assets/voltarBtn.svg" alt=""></button>
+                            <button onclick="mudarCor()" class="form-btn" id="nextButton"><img
+                                    src="./assets/green-arrow.svg" alt=""></button>
+                            <button class="form-btn" id="enviarButton" type="submit"
+                                style="display: none;">FINALIZAR</button>
+                        </div>
+
+                    </div>
+                </form>
+                <script type="text/javascript">
+
+                    var __ss_noform = __ss_noform || [];
+
+                    __ss_noform.push(['baseURI', 'https://app-3R03ISYOB8.marketingautomation.services/webforms/receivePostback/MzawNDI3NTOxAAA/']);
+
+                    __ss_noform.push(['endpoint', '2c825f12-b162-4ecb-82be-e5b3fea122c1']);
+
+                </script>
+
+                <script type="text/javascript"
+                    src="https://koi-3R03ISYOB8.marketingautomation.services/client/noform.js?ver=1.24"></script>
+            </div>
+        </div>
+
     </div>
-
     <script src="script.js"></script>
-
-
-    
 </body>
+
 </html>
