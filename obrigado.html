@@ -49,30 +49,7 @@
 
     </footer>
 
-    <script>
-      // JavaScript para criar o efeito de carrossel
-      const container = document.querySelector('.carousel-container');
-    const videos = document.querySelectorAll('.carousel-video');
-    const previousArrow = document.querySelector('.carousel-arrow.previous');
-    const nextArrow = document.querySelector('.carousel-arrow.next');
 
-    let currentIndex = 0;
-
-    function nextVideo() {
-      videos[currentIndex].style.marginRight = '20px';
-      currentIndex = (currentIndex + 1) % videos.length;
-      videos[currentIndex].style.marginRight = '0';
-    }
-
-    function previousVideo() {
-      videos[currentIndex].style.marginRight = '20px';
-      currentIndex = (currentIndex - 1 + videos.length) % videos.length;
-      videos[currentIndex].style.marginRight = '0';
-    }
-
-    nextArrow.addEventListener('click', nextVideo);
-    previousArrow.addEventListener('click', previousVideo);
-      </script>
 </body>
 
 <style>
